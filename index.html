@@ -7,12 +7,13 @@
     <title>Gabriel Rowan Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="myscripts.js" async></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <a href="#" class="nav-branding">Gabriel-does-tech</a>
+            <img class="nav-branding-icon" src="nav-branding-test.png" alt="portfolio-brand-icon"/>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
@@ -23,7 +24,7 @@
         </div>
     </header>
     <main>
-        <section class="about">
+        <section class="about-section">
             <div class="about-card">
                 <div class="about-profile-photo">
                     <img src="profile-photo-stock-image.jpg" alt="photo of Gabriel Rowan" />
@@ -43,39 +44,50 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
-            <div class="project-card">
-                <div class="project-image-container">
-                    <img class="project-image" src="project-stock-image.jpg" alt="stock-image">
+        <section class="projects-section">
+            <h2 class="projects-title">My Projects</h2>
+            <div class="project-cards-container">        
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img class="project-image" src="project-stock-image.jpg" alt="stock-image">
+                    </div>
+                    <div class="project-description">
+                        <h3 class="project-name">Las Vegas</h3>
+                        <p class="project-main-details">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Praesentium dignissimos, minus aperiam
+                            adipisci exercitationem.</p>
+                    </div>
                 </div>
-                <div class="project-description">
-                    <h3 class="project-name">Las Vegas</h3>
-                    <p class="project-main-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam
-                        adipisci exercitationem.</p>
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img class="project-image" src="project-stock-image.jpg" alt="stock-image">
+                    </div>
+                    <div class="project-description">
+                        <h3 class="project-name">New York</h3>
+                        <p class="project-main-details">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Praesentium dignissimos, minus aperiam
+                            adipisci exercitationem.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image-container">
-                    <img class="project-image" src="project-stock-image.jpg" alt="stock-image">
-                </div>
-                <div class="project-description">
-                    <h3 class="project-name">New York</h3>
-                    <p class="project-main-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam
-                        adipisci exercitationem.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image-container">
-                    <img class="project-image" src="project-stock-image.jpg" alt="stock-image">
-                </div>
-                <div class="project-description">
-                    <h3 class="project-name">Singapore</h3>
-                    <p class="project-main-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam
-                        adipisci exercitationem.</p>
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img class="project-image" src="project-stock-image.jpg" alt="stock-image">
+                    </div>
+                    <div class="project-description">
+                        <h3 class="project-name">Singapore</h3>
+                        <p class="project-main-details">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Praesentium dignissimos, minus aperiam
+                            adipisci exercitationem.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <p class="copyright">
+        Copyright © <span id="currentYear"></span>. All rights are reserved
+        </p>
+    </footer>
 </body>
 
 </html>
