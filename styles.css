@@ -202,6 +202,15 @@ body {
     color: var(--white);
 }
 
+.contact-title::after {
+    content: "";
+    display: block;
+    height: 1.5px;
+    width: 3.5rem;
+    background: var(--off-white);
+    margin: 0 auto;
+}
+
 footer {
     background-color: var(--warm-beige);
     font-size: var(--text-size-small);
