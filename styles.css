@@ -6,7 +6,7 @@
 }
 
 :root {
-    --heading-large: 2rem;
+    --heading-large: 2.3rem;
     --heading-medium: 1.3rem;
     --text-size-standard: 1rem;
     --text-size-small: 0.8rem;
@@ -18,7 +18,8 @@
     --border-radius-slanted: 20% 10%;
     --off-black: #1c1b29;
     --warm-beige: #EED9C4;
-    --section-separation-margin: 40px;
+    --section-separation-margin-mobile: 40px;
+    --section-separation-margin-desktop: 120px;
     --border-white: 2px solid white;
   }
 
@@ -33,7 +34,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    margin-bottom: var(--section-separation-margin);
+    margin-bottom: var(--section-separation-margin-mobile);
 }
 
 .nav-menu {
@@ -51,6 +52,7 @@ body {
 }
 .nav-item {
     list-style: none;
+    font-weight: 600;
 }
 
 .nav-link {
@@ -112,6 +114,7 @@ body {
 
 .about-profile-intro-text {
     font-size: var(--text-size-standard);
+    margin-top: 25px;
 }
 
 .about-profile-pronouns {
@@ -126,7 +129,16 @@ body {
 }
 
 .projects-section {
-    margin: var(--section-separation-margin) 0;
+    margin: var(--section-separation-margin-mobile) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.projects-title {
+    font-size: var(--heading-large);
+    margin-bottom: 60px;
 }
 
 .project-cards-container {
@@ -168,6 +180,13 @@ body {
     font-weight: 400;
 }
 
+footer {
+    background-color: var(--off-black);
+    color: var(--white);
+    font-size: var(--text-size-small);
+    padding: 1.5rem 0.5rem;
+}
+
 @media(min-width: 570px)
 {
     .about-card, .project-card {
@@ -178,11 +197,17 @@ body {
 /* desktop view */
 @media (min-width: 800px)
 {
+    .navbar {
+        margin-bottom: var(--section-separation-margin-desktop);
+    }
+
+
     .about-card {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        width: min(60%, 700px);
+        width: max(50%, 850px);
         border-radius: var(--border-radius-slanted);
+        padding: 100px 25px;
     }
 
     .about-main-intro {
@@ -193,11 +218,19 @@ body {
         width: min(100%, 400px);
     }
 
+    .projects-section {
+        margin: var(--section-separation-margin-desktop) 0;
+
+    }
+
     .project-cards-container  {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
+
+
 
     .project-card {
         width: 23%;
