@@ -54,7 +54,6 @@ body {
 }
 .nav-item {
     list-style: none;
-    font-weight: 600;
 }
 
 .nav-link {
@@ -136,7 +135,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--white);
 }
 
 .projects-title {
@@ -184,11 +182,31 @@ body {
     font-weight: 400;
 }
 
-footer {
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--section-separation-margin-mobile) 0;
+}
+
+.contact-card {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
     background-color: var(--off-black);
+    border-radius: var(--border-radius-small);
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
     color: var(--white);
+}
+
+footer {
+    background-color: var(--warm-beige);
     font-size: var(--text-size-small);
     padding: 1.5rem 0.5rem;
+    color: var(--off-black);
 }
 
 @media(min-width: 570px)
@@ -234,11 +252,33 @@ footer {
         flex-wrap: wrap;
     }
 
-
-
     .project-card {
         width: 23%;
     }
 
+
+    .contact-card {
+        width: max(50%, 850px);
+        border-radius: var(--border-radius-slanted);
+        padding: 60px 25px;
+        margin: var(--section-separation-margin-desktop);
+    }
+
+    .contact-title {
+        font-size: var(--heading-large);
+    }
+
+    .contact-details {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        gap: 30%;
+    }
+
+    .contact-tagline {
+        font-size: var(--heading-medium);
+        margin: 2% 0 5% 0;
+
+    }
 
 }
