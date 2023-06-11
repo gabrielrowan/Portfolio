@@ -10,6 +10,7 @@
     --heading-medium: 1.3rem;
     --text-size-standard: 1rem;
     --text-size-small: 0.8rem;
+    --text-size-large: 1.2rem;
     --white: #ffffff;
     --off-white: #FAF9F6;
     --off-white-transparent: rgb(250, 249, 246, 0.8);
@@ -19,7 +20,7 @@
     --off-black: #1c1b29;
     --warm-beige: #EED9C4;
     --section-separation-margin-mobile: 40px;
-    --section-separation-margin-desktop: 120px;
+    --section-separation-margin-desktop: 140px;
     --border-white: 2px solid white;
     --box-shadow: 0 0 10px rgba(0,0,0,.09);
   }
@@ -54,7 +55,6 @@ body {
 }
 .nav-item {
     list-style: none;
-    font-weight: 600;
 }
 
 .nav-link {
@@ -70,6 +70,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: var(--section-separation-margin-mobile);
 }
 
 .about-card {
@@ -106,7 +107,7 @@ body {
     margin: 0 auto;
 }
 
-.about-profile-job-title, .about-profile-intro-text {
+.about-profile-job-title {
     color: var(--off-white);
     font-weight: 400;
 }
@@ -118,6 +119,7 @@ body {
 .about-profile-intro-text {
     font-size: var(--text-size-standard);
     margin-top: 25px;
+    color: var(--white);
 }
 
 .about-profile-pronouns {
@@ -132,11 +134,10 @@ body {
 }
 
 .projects-section {
-    margin: var(--section-separation-margin-mobile) 0;
+    margin-bottom: var(--section-separation-margin-mobile);
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--white);
 }
 
 .projects-title {
@@ -184,16 +185,93 @@ body {
     font-weight: 400;
 }
 
-footer {
+.project-button-row {
+    padding: 20px 10px;
+    display: flex;
+    gap: 3%;
+}
+
+.project-button-row button{
+    padding: 5px 7px;
+    background-color: var(--off-white);
+    border: none;
+    border-radius: 7px;
+    font-size: var(--text-size-standard);
+    box-shadow: var(--box-shadow);
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--section-separation-margin-mobile);
+}
+
+.contact-card {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
     background-color: var(--off-black);
+    border-radius: var(--border-radius-small);
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
     color: var(--white);
+}
+
+.contact-title {
+    font-size: var(--heading-large);
+}
+
+.contact-title::after {
+    content: "";
+    display: block;
+    height: 1.5px;
+    width: 3.5rem;
+    background: var(--off-white);
+    margin: 0 auto;
+}
+
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 35px;
+}
+
+.contact-detail-type {
+    margin: 10px 0 5px 0;
+    color: var(--off-white-transparent);
+}
+
+.contact-detail-data {
+    font-size: var(--text-size-large);
+}
+
+.contact-tagline {
+    font-size: var(--heading-medium);
+    margin: 2% 0 5% 0;
+
+}
+
+.location-icon, .email-icon {
+    font-size: 1.8rem;
+}
+
+footer {
+    background-color: var(--warm-beige);
     font-size: var(--text-size-small);
     padding: 1.5rem 0.5rem;
+    color: var(--off-black);
 }
 
 @media(min-width: 570px)
 {
-    .about-card, .project-card {
+    .about-card, .project-card, .contact-card {
         width: min(75%, 800px);
     }
 }
@@ -202,6 +280,10 @@ footer {
 @media (min-width: 800px)
 {
     .navbar {
+        margin-bottom: var(--section-separation-margin-desktop);
+    }
+
+    .about-section {
         margin-bottom: var(--section-separation-margin-desktop);
     }
 
@@ -223,7 +305,7 @@ footer {
     }
 
     .projects-section {
-        margin: var(--section-separation-margin-desktop) 0;
+        margin-bottom: var(--section-separation-margin-desktop);
 
     }
 
@@ -234,11 +316,31 @@ footer {
         flex-wrap: wrap;
     }
 
-
-
     .project-card {
         width: 23%;
     }
 
+    .contact-section {
+        margin-bottom: var(--section-separation-margin-desktop);
+    }
+
+
+    .contact-card {
+        width: max(50%, 850px);
+        border-radius: var(--border-radius-slanted);
+        padding: 60px 25px;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px 0;
+        gap: 30%;
+    }
+
+    .location-icon, .email-icon {
+        font-size: 2.5rem;
+    }
 
 }

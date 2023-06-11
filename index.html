@@ -7,13 +7,14 @@
     <title>Gabriel Rowan Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="myscripts.js" async></script>
+    <script src="https://kit.fontawesome.com/5f4d2af634.js" crossorigin="anonymous"></script>
+    <script src="myscripts.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <img class="nav-branding-icon" src="nav-branding-test.png" alt="portfolio-brand-icon"/>
+            <p class="nav-branding-icon">GR</p>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
@@ -46,7 +47,7 @@
         </section>
         <section class="projects-section">
             <h2 class="projects-title">My Projects</h2>
-            <div class="project-cards-container">        
+            <div class="project-cards-container">
                 <div class="project-card">
                     <div class="project-image-container">
                         <img class="project-image" src="project-stock-image.jpg" alt="stock-image">
@@ -55,7 +56,15 @@
                         <h3 class="project-name">Las Vegas</h3>
                         <p class="project-main-details">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Praesentium dignissimos, minus aperiam
-                            adipisci exercitationem.</p>
+                            adipisci exercitationem.</p>                       
+                    </div>
+                    <div class="project-button-row">
+                        <button>
+                            Live Demo <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                        <button>
+                            View Code <i class="fa-brands fa-github"></i>
+                        </button>
                     </div>
                 </div>
                 <div class="project-card">
@@ -68,6 +77,14 @@
                             Praesentium dignissimos, minus aperiam
                             adipisci exercitationem.</p>
                     </div>
+                    <div class="project-button-row">
+                        <button>
+                            Live Demo <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                        <button>
+                            View Code <i class="fa-brands fa-github"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image-container">
@@ -77,7 +94,33 @@
                         <h3 class="project-name">Singapore</h3>
                         <p class="project-main-details">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Praesentium dignissimos, minus aperiam
-                            adipisci exercitationem.</p>
+                            adipisci exercitationem.</p>                      
+                    </div>
+                    <div class="project-button-row">
+                        <button>
+                            Live Demo <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                        <button>
+                            View Code <i class="fa-brands fa-github"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="contact-card">
+                <h2 class="contact-title">Contact</h2>
+                <h3 class="contact-tagline">I'd love to hear from you! </h3>
+                <div class="contact-details">
+                    <div class="contact-detail-location">
+                        <p><i class="fa-sharp fa-solid fa-location-dot location-icon"></i></p>
+                        <p class="contact-detail-type">Location</p>
+                        <p class="contact-detail-data">Bath, UK</p>
+                    </div>
+                    <div class="contact-detail-email">
+                        <p><i class="fa-solid fa-envelope email-icon"></i></p>
+                        <p class="contact-detail-type">Email</p>
+                        <p class="contact-detail-data">gabrielrowan82@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -85,7 +128,7 @@
     </main>
     <footer>
         <p class="copyright">
-        Copyright © <span id="currentYear"></span>. All rights are reserved
+            Copyright © <span id="currentYear"></span>. All rights are reserved
         </p>
     </footer>
 </body>
