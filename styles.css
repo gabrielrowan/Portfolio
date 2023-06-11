@@ -220,6 +220,10 @@ body {
     color: var(--white);
 }
 
+.contact-title {
+    font-size: var(--heading-large);
+}
+
 .contact-title::after {
     content: "";
     display: block;
@@ -229,16 +233,33 @@ body {
     margin: 0 auto;
 }
 
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 35px;
+}
+
 .contact-detail-type {
-    margin: 10px 0;
+    margin: 10px 0 5px 0;
+    color: var(--off-white-transparent);
 }
 
 .contact-detail-data {
     font-size: var(--text-size-large);
 }
 
+.contact-tagline {
+    font-size: var(--heading-medium);
+    margin: 2% 0 5% 0;
+
+}
+
 .location-icon, .email-icon {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
 footer {
@@ -250,7 +271,7 @@ footer {
 
 @media(min-width: 570px)
 {
-    .about-card, .project-card {
+    .about-card, .project-card, .contact-card {
         width: min(75%, 800px);
     }
 }
@@ -310,21 +331,16 @@ footer {
         padding: 60px 25px;
     }
 
-    .contact-title {
-        font-size: var(--heading-large);
-    }
-
     .contact-details {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         padding: 20px 0;
         gap: 30%;
     }
 
-    .contact-tagline {
-        font-size: var(--heading-medium);
-        margin: 2% 0 5% 0;
-
+    .location-icon, .email-icon {
+        font-size: 2.5rem;
     }
 
 }
