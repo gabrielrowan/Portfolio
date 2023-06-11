@@ -21,6 +21,7 @@
     --warm-beige: #EED9C4;
     --section-separation-margin-mobile: 40px;
     --section-separation-margin-desktop: 140px;
+    --header-separation-margin-mobile: 120px;
     --border-white: 2px solid white;
     --box-shadow: 0 0 10px rgba(0,0,0,.09);
   }
@@ -36,11 +37,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: var(--section-separation-margin-mobile);
+    margin-bottom: var(--header-separation-margin-mobile);
     box-shadow: var(--box-shadow);
     padding: 0 40px;
+    flex-direction: row;
 }
-
 .nav-menu {
     display: none;
 }
@@ -50,6 +51,7 @@ body {
 {
     font-size: 2rem;
 }
+
 .nav-item {
     list-style: none;
 
