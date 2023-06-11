@@ -10,6 +10,7 @@
     --heading-medium: 1.3rem;
     --text-size-standard: 1rem;
     --text-size-small: 0.8rem;
+    --text-size-large: 1.2rem;
     --white: #ffffff;
     --off-white: #FAF9F6;
     --off-white-transparent: rgb(250, 249, 246, 0.8);
@@ -184,6 +185,21 @@ body {
     font-weight: 400;
 }
 
+.project-button-row {
+    padding: 20px 10px;
+    display: flex;
+    gap: 3%;
+}
+
+.project-button-row button{
+    padding: 5px 7px;
+    background-color: var(--off-white);
+    border: none;
+    border-radius: 7px;
+    font-size: var(--text-size-standard);
+    box-shadow: var(--box-shadow);
+}
+
 .contact-section {
     display: flex;
     align-items: center;
@@ -211,6 +227,18 @@ body {
     width: 3.5rem;
     background: var(--off-white);
     margin: 0 auto;
+}
+
+.contact-detail-type {
+    margin: 10px 0;
+}
+
+.contact-detail-data {
+    font-size: var(--text-size-large);
+}
+
+.location-icon, .email-icon {
+    font-size: 2.5rem;
 }
 
 footer {
