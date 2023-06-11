@@ -1,4 +1,7 @@
 let date = new Date();
 let year = date.getFullYear();
 
-document.getElementsById("currentYear").innerText = year;
+let yearTextNode = document.createTextNode(year);
+document.getElementById("copyright-year").appendChild(yearTextNode);
+
+
