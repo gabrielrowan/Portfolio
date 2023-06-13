@@ -42,6 +42,7 @@ body {
     padding: 0 40px;
     flex-direction: row;
 }
+
 .nav-menu {
     display: none;
 }
@@ -49,7 +50,8 @@ body {
 
 .nav-branding 
 {
-    font-size: 2rem;
+    font-size: var(--heading-medium);
+
 }
 
 .nav-item {
@@ -79,6 +81,11 @@ body {
     transition: all 0.3s ease-in-out;
     background-color: black;
 
+}
+
+.hamburger-menu {
+    position: absolute;
+    right: 8%;
 }
 
 .hamburger-menu.active .hamburger-bar:nth-child(2)
@@ -301,12 +308,39 @@ footer {
     color: var(--off-black);
 }
 
+
+/*mobile view nav menu*/
+@media(max-width: 800px){
+    .nav-menu.active {
+        position: fixed;
+        inset: 0 0 0 70vw;
+        background-color: rgb(238, 217, 196, 0.5);
+        padding: min(14vh, 7rem) 2rem;
+        display: block;
+        height: 18vh;
+    
+    
+    }
+}
+
+/*mobile view nav menu with larger indent for small width phones like galaxy fold*/
+@media(max-width: 300px)
+{
+    .nav-menu.active {
+        inset: 0 0 0 60vw;
+    }
+
+}
+
+
+
 @media(min-width: 570px)
 {
     .about-card, .project-card, .contact-card {
         width: min(75%, 800px);
     }
 }
+
 
 /* desktop view */
 @media (min-width: 800px)
