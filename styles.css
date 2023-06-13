@@ -21,6 +21,7 @@
     --warm-beige: #EED9C4;
     --section-separation-margin-mobile: 40px;
     --section-separation-margin-desktop: 140px;
+    --header-separation-margin-mobile: 120px;
     --border-white: 2px solid white;
     --box-shadow: 0 0 10px rgba(0,0,0,.09);
   }
@@ -35,36 +36,74 @@ body {
     min-height: 70px;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    margin-bottom: var(--section-separation-margin-mobile);
+    align-items: center;
+    margin-bottom: var(--header-separation-margin-mobile);
     box-shadow: var(--box-shadow);
+    padding: 0 40px;
+    flex-direction: row;
 }
 
 .nav-menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
+    display: none;
 }
 
-.nav-branding-icon 
+
+.nav-branding 
 {
-    width: 2.5rem;
-    height: 2.5rem;
+    font-size: var(--heading-medium);
 
 }
+
 .nav-item {
     list-style: none;
+
 }
 
 .nav-link {
     text-decoration: none;
     color: var(--off-black);
+    transition: 0.5s ease;
+
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+
+.hamburger-bar {
+    display: block;
+    border-radius: 5px;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+
 }
 
 .hamburger-menu {
-    display: none;
+    position: absolute;
+    right: 8%;
 }
+
+.hamburger-menu.active .hamburger-bar:nth-child(2)
+{
+    opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-bar:nth-child(1)
+{
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.active .hamburger-bar:nth-child(3)
+{
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
 
 .about-section {
     display: flex;
@@ -269,6 +308,32 @@ footer {
     color: var(--off-black);
 }
 
+
+/*mobile view nav menu*/
+@media(max-width: 800px){
+    .nav-menu.active {
+        position: fixed;
+        inset: 0 0 0 70vw;
+        background-color: rgb(238, 217, 196, 0.5);
+        padding: min(14vh, 7rem) 2rem;
+        display: block;
+        height: 18vh;
+    
+    
+    }
+}
+
+/*mobile view nav menu with larger indent for small width phones like galaxy fold*/
+@media(max-width: 300px)
+{
+    .nav-menu.active {
+        inset: 0 0 0 60vw;
+    }
+
+}
+
+
+
 @media(min-width: 570px)
 {
     .about-card, .project-card, .contact-card {
@@ -276,12 +341,25 @@ footer {
     }
 }
 
+
 /* desktop view */
 @media (min-width: 800px)
 {
     .navbar {
         margin-bottom: var(--section-separation-margin-desktop);
     }
+
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+    }
+
+
+    .hamburger-menu {
+        display: none;
+    } 
 
     .about-section {
         margin-bottom: var(--section-separation-margin-desktop);
