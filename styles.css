@@ -8,8 +8,8 @@
 :root {
     --heading-large: 2.3rem;
     --heading-medium: 1.3rem;
-    --text-size-standard: 1rem;
     --text-size-small: 0.8rem;
+    --text-size-standard: 1rem;
     --text-size-large: 1.2rem;
     --white: #ffffff;
     --off-white: #FAF9F6;
@@ -329,6 +329,10 @@ footer {
     .nav-menu.active {
         inset: 0 0 0 60vw;
     }
+
+    .contact-detail-data {
+    font-size: var(--text-size-standard);
+}
 
 }
 
