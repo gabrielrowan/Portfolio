@@ -129,7 +129,7 @@ body {
 
 .about-profile-photo img {
     width: min(80%, 250px);
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: var(--border-radius-small);
 }
 
