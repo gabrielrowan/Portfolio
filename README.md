@@ -14,13 +14,10 @@ For my portfolio, I aimed for a clean, mobile-responsive design with a warm-tone
 
 ## Colour Scheme
 
-![blue](https://readme-swatches.vercel.app/1C1B29)
-![blue](https://readme-swatches.vercel.app/EED9C4)
-![blue](https://readme-swatches.vercel.app/F9F9F9)
+![1C1B29](https://readme-swatches.vercel.app/1C1B29) #1C1B29
+![EED9C4](https://readme-swatches.vercel.app/EED9C4) #EED9C4
+![F9F9F9](https://readme-swatches.vercel.app/F9F9F9) #F9F9F9
 
-`#1C1B29`
-`#EED9C4`
-`#F9F9F9`
 
 
 ## Responsive Considerations
