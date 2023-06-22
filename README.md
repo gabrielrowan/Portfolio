@@ -32,7 +32,8 @@ For my portfolio, I aimed for a clean, mobile-responsive design with a warm-tone
 
 ## Accessibility Considerations
 
+- Colour contrast ratio meets AA & AAA requirements
 
-
+  ![Image of portfolio projects template](colour-contrast-ratio.png)
 
 
