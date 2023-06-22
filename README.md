@@ -4,7 +4,7 @@
 
 For my portfolio, I aimed for a clean, mobile-responsive design with a warm-tone colour scheme to be able to present my personal projects.
 
-![Image of portfolio projects template](portfolio-projects.png)
+![Image of portfolio projects template](.Images/portfolio-projects.png)
 
 ## Technologies Used
 
@@ -27,14 +27,14 @@ For my portfolio, I aimed for a clean, mobile-responsive design with a warm-tone
   - Percentages and `Min(val1, val2)` for widths
   - Media Queries  
   
-  ![Image of portfolio projects template](project-mobile-view.png)
+  ![Image of portfolio projects template](.Images/project-mobile-view.png)
 
 
 ## Accessibility Considerations
 
 - Colour contrast ratio meets AA & AAA requirements
 
-  ![Image of portfolio projects template](colour-contrast-ratio.png)
+  ![Image of portfolio projects template](.Images/colour-contrast-ratio.png)
 
 - All images have alt text
 - Use of rem units for font sizes to help scale content with user's personal preference 
