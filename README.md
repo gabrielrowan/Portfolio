@@ -18,9 +18,13 @@ For my portfolio, I aimed for a clean, mobile-responsive design with a warm-tone
 ![EED9C4](https://readme-swatches.vercel.app/EED9C4) #EED9C4
 
 
-
-
 ## Responsive Considerations
+
+- Mobile first design
+- Responsiveness achieved by: 
+  - Flex
+  - Percentages and `Min(val1, val2)` for widths
+  - Media Queries
 
 ## Accessibility Considerations
 
