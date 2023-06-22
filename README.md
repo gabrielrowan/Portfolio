@@ -17,6 +17,7 @@ For my portfolio, I aimed for a clean, mobile-responsive design with a warm-tone
 `#1C1B29`
 `#EED9C4`
 `#F9F9F9`
+![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
 
 ## Responsive Considerations
 
