@@ -29,6 +29,10 @@ For my portfolio, I aimed for a clean, mobile-responsive design with a warm-tone
 
   ![Image of portfolio projects template](project-mobile-view.png)
 
+  <p align="center" width="100%">
+    <img width="100%" src="project-mobile-view.png">
+</p>
+
 ## Accessibility Considerations
 
 
