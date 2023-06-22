@@ -36,4 +36,6 @@ For my portfolio, I aimed for a clean, mobile-responsive design with a warm-tone
 
   ![Image of portfolio projects template](colour-contrast-ratio.png)
 
-
+- All images have alt text
+- Use of rem units for font sizes to help scale content with user's personal preference 
+- Structural, semantic HTML
