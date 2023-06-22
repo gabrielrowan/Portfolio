@@ -14,6 +14,10 @@ For my portfolio, I aimed for a clean, mobile-responsive design with a warm-tone
 
 ## Colour Scheme
 
+`#1C1B29`
+`#EED9C4`
+`#F9F9F9`
+
 ## Responsive Considerations
 
 ## Accessibility Considerations
