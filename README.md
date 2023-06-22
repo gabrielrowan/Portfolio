@@ -25,10 +25,9 @@ For my portfolio, I aimed for a clean, mobile-responsive design with a warm-tone
   - Hamburger menu for mobile layout
   - Flex
   - Percentages and `Min(val1, val2)` for widths
-  - Media Queries
-
+  - Media Queries  
+  
   ![Image of portfolio projects template](project-mobile-view.png)
-
 
 
 ## Accessibility Considerations
