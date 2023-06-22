@@ -21,7 +21,8 @@ For my portfolio, I aimed for a clean, mobile-responsive design with a warm-tone
 ## Responsive Considerations
 
 - Mobile first design
-- Responsiveness achieved by: 
+- Responsiveness achieved by:
+  - Hamburger menu for mobile layout
   - Flex
   - Percentages and `Min(val1, val2)` for widths
   - Media Queries
