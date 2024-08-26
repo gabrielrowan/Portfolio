@@ -37,6 +37,24 @@ body {
     background-color: var(--background-secondary);
 }
 
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(107, 139, 245, 0.7);
+
+}
+
+::-webkit-scrollbar-thumb {
+    margin-top: 10px;
+    /*background: #f0fbff;*/
+    background: white;
+    border-radius: 10px;
+}
+
+/* ---- nav bar ---- */
 .navbar {
     background-color: var(--purple);
     min-height: 70px;
@@ -47,6 +65,9 @@ body {
     box-shadow: var(--box-shadow);
     padding: 0 40px;
     flex-direction: row;
+    position: relative;
+    z-index: 1;
+
 }
 
 .nav-menu {
@@ -127,6 +148,8 @@ body {
     background-color: var(--background-primary);
     border-radius: var(--border-radius-small);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+    position: relative;
+
 
 }
 
@@ -198,6 +221,7 @@ body {
     align-items: center;
     justify-content: center;
     grid-gap: 40px;
+    position: relative;
 }
 
 .project-card {
@@ -239,7 +263,7 @@ body {
 
 .project-button-row button {
     padding: 5px 7px;
-    background-color: var(--off-white);
+    background-color: var(--purple);
     border: none;
     border-radius: 7px;
     font-size: var(--text-size-standard);
@@ -264,6 +288,7 @@ body {
     border-radius: var(--border-radius-small);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
     color: var(--white);
+    position: relative;
 }
 
 .contact-title {
@@ -315,6 +340,7 @@ footer {
     font-size: var(--text-size-small);
     padding: 1.5rem 0.5rem;
     color: var(--white);
+    position: relative;
 }
 
 
