@@ -37,6 +37,24 @@ body {
     background-color: var(--background-secondary);
 }
 
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(107, 139, 245, 0.7);
+
+}
+
+::-webkit-scrollbar-thumb {
+    margin-top: 10px;
+    /*background: #f0fbff;*/
+    background: white;
+    border-radius: 10px;
+}
+
+/* ---- nav bar ---- */
 .navbar {
     background-color: var(--purple);
     min-height: 70px;
