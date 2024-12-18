@@ -150,6 +150,12 @@ body {
     position: relative;
 }
 
+.multi-icon-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .icon-container {
     width: 130px;
     height: 130px;
@@ -158,6 +164,19 @@ body {
     align-items: center;
     border-radius: 10px;
     background: var(--background-secondary);
+    box-shadow: 0 8px 8px -4px black;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.icon-container svg {
+    width: 75px;
+    height: 75px;
+}
+
+.icon-name {
+    color: white;
+    letter-spacing: 0.1rem;
 }
 
 
