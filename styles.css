@@ -156,15 +156,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
+    background: var(--background-secondary);
 }
 
-.html-icon {
-    fill: #DD4B24;
-    width: 100px;
-    height: 100px;
-}
 
 .about-profile-photo {
     display: grid;
