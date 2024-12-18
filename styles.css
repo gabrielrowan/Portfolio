@@ -49,7 +49,6 @@ body {
 
 ::-webkit-scrollbar-thumb {
     margin-top: 10px;
-    /*background: #f0fbff;*/
     background: white;
     border-radius: 10px;
 }
@@ -145,12 +144,26 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 2rem;
-    background-color: var(--background-primary);
+    background: linear-gradient(to bottom right, #6B8BF5, 20%, #001929);
     border-radius: var(--border-radius-small);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
     position: relative;
+}
 
+.icon-container {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+}
 
+.html-icon {
+    fill: #DD4B24;
+    width: 100px;
+    height: 100px;
 }
 
 .about-profile-photo {
