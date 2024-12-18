@@ -155,8 +155,10 @@ body {
     gap: 20px;
     grid-area: icons;
     justify-content: center;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     flex-wrap: wrap;
+    max-width: 450px;
+    justify-self: center;
 }
 
 .icon-container {
@@ -188,6 +190,7 @@ body {
     place-items: center;
     padding-bottom: 1.5rem;
     grid-area: photo;
+    margin-left: 10px;
 }
 
 .about-profile-name {
@@ -439,19 +442,19 @@ footer {
     .about-card {
         display: grid;
         grid-template-columns: 1fr 2fr;
+        grid-template-rows: 140px min-content;
         width: max(50%, 850px);
         border-radius: var(--border-radius-slanted);
         padding: 100px 25px;
         grid-template-areas:
             "photo intro"
-            "icons icons"
+            "photo icons"
     }
 
     .about-main-intro {
         margin-left: 1.5rem;
         grid-area: intro;
         align-self: center;
-        justify-self: center;
     }
 
     .about-profile-photo {
