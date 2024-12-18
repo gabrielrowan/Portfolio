@@ -152,13 +152,16 @@ body {
 
 .multi-icon-container {
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    grid-area: icons;
+    justify-content: center;
+    margin-top: 1.5rem;
     flex-wrap: wrap;
 }
 
 .icon-container {
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,6 +187,7 @@ body {
     display: grid;
     place-items: center;
     padding-bottom: 1.5rem;
+    grid-area: photo;
 }
 
 .about-profile-name {
@@ -224,7 +228,7 @@ body {
 
 .about-profile-photo img {
     width: min(80%, 250px);
-    border: 1px solid white;
+    border: 1px solid var(--background-primary);
     border-radius: var(--border-radius-small);
 }
 
@@ -438,10 +442,16 @@ footer {
         width: max(50%, 850px);
         border-radius: var(--border-radius-slanted);
         padding: 100px 25px;
+        grid-template-areas:
+            "photo intro"
+            "icons icons"
     }
 
     .about-main-intro {
         margin-left: 1.5rem;
+        grid-area: intro;
+        align-self: center;
+        justify-self: center;
     }
 
     .about-profile-photo {
