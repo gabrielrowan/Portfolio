@@ -15,17 +15,16 @@ const options = {
         },
         move: {
             enable: false,
-            //speed: 0.01
         },
         number: {
-            value: 130
+            value: 100
         },
         shape: {
             type: "circle"
         },
         links: {
             enable: true,
-            opacity: 0.3,
+            opacity: 0.2,
             color: "#6B8BF5"
         },
         opacity: {
