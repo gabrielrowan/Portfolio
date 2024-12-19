@@ -175,6 +175,7 @@ body {
     gap: 3px;
     position: relative;
     overflow: hidden;
+    transition: box-shadow 1000ms ease-in;
 }
 
 .icon-container svg {
@@ -182,7 +183,8 @@ body {
     height: 75px;
 }
 
-.icon-container::after {
+.icon-container::after,
+.icon-container.active::after {
     background: linear-gradient(to right, #fc72ff, #8f78ff, #487bff);
     content: "";
     height: 250px;
@@ -193,18 +195,20 @@ body {
     transform: rotate(35deg);
     width: 50px;
     z-index: 1;
-  
+
 }
 
-.icon-container:hover::after {
-  left: 120px;  
-  top: 120px; 
-  transition: all 1100ms ease-in-out;
+.icon-container:hover::after,
+.icon-container.active::after {
+    left: 120px;
+    top: 120px;
+    transition: all 1100ms ease-in-out;
 }
 
-.icon-container:hover {
-  box-shadow: none;
-  transition: all 1100ms ease-in-out;
+.icon-container:hover,
+.icon-container.active {
+    box-shadow: none;
+    transition: all 1100ms ease-in-out;
 }
 
 
