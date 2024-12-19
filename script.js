@@ -35,7 +35,7 @@ function setCopywriteYear()
 function applyAnimationToIconContainers()
 {
     const iconContainers = document.querySelectorAll(".icon-container");
-    const delay = 1375;
+    const delay = 1100;
     const animationDuration = 1100;
 
     iconContainers.forEach((container, index) =>

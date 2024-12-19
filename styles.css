@@ -175,7 +175,7 @@ body {
     gap: 3px;
     position: relative;
     overflow: hidden;
-    transition: box-shadow 375ms ease-in;
+    transition: box-shadow 150ms ease-in;
 }
 
 .icon-container svg {
@@ -202,13 +202,13 @@ body {
 .icon-container.active::after {
     left: 120px;
     top: 120px;
-    transition: all 1100ms ease-in-out;
+    transition: all 950ms ease-in-out;
 }
 
 .icon-container:hover,
 .icon-container.active {
     box-shadow: none;
-    transition: all 1100ms ease-in-out;
+    transition: all 950ms ease-in-out;
 }
 
 
