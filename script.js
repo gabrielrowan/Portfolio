@@ -35,7 +35,8 @@ function setCopywriteYear()
 function applyAnimationToIconContainers()
 {
     const iconContainers = document.querySelectorAll(".icon-container");
-    const delay = 1000;
+    const delay = 1500;
+    const animationDuration = 1100;
 
     iconContainers.forEach((container, index) =>
     {
@@ -47,12 +48,10 @@ function applyAnimationToIconContainers()
             setTimeout(() =>
             {
                 container.classList.remove("active");
-            }, (delay * (index + 1)) + 0.1);
+            }, animationDuration);
 
 
         }, delay * (index + 1));
-
-
 
     });
 }
