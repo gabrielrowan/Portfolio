@@ -39,11 +39,21 @@ function applyAnimationToIconContainers()
 
     iconContainers.forEach((container, index) =>
     {
+
         setTimeout(() =>
         {
             container.classList.add("active");
 
+            setTimeout(() =>
+            {
+                container.classList.remove("active");
+            }, (delay * (index + 1)) + 0.1);
+
+
         }, delay * (index + 1));
+
+
+
     });
 }
 
