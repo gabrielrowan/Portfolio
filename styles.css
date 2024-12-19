@@ -175,7 +175,7 @@ body {
     gap: 3px;
     position: relative;
     overflow: hidden;
-    transition: box-shadow 400ms ease-in;
+    transition: box-shadow 300ms ease-in;
 }
 
 .icon-container svg {
