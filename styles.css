@@ -62,7 +62,7 @@ body {
     align-items: center;
     margin-bottom: var(--header-separation-margin-mobile);
     box-shadow: var(--box-shadow);
-    padding: 0 40px;
+    padding: 0 40px 0 20px;
     flex-direction: row;
     position: relative;
     z-index: 1;
@@ -87,6 +87,7 @@ body {
 .nav-link {
     text-decoration: none;
     color: var(--off-black);
+    font-size: var(--text-size-large);
 
 }
 
@@ -177,6 +178,11 @@ body {
 .icon-container svg {
     width: 75px;
     height: 75px;
+}
+
+.nav-branding svg {
+    width: 42px;
+    height: 42px;
 }
 
 .icon-name {
