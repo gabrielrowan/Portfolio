@@ -173,12 +173,40 @@ body {
     box-shadow: 0 8px 8px -4px black;
     flex-direction: column;
     gap: 3px;
+    position: relative;
+    overflow: hidden;
 }
 
 .icon-container svg {
     width: 75px;
     height: 75px;
 }
+
+.icon-container::after {
+    background: linear-gradient(to right, #fc72ff, #8f78ff, #487bff);
+    content: "";
+    height: 250px;
+    left: -50px;
+    opacity: .8;
+    position: absolute;
+    top: -155px;
+    transform: rotate(35deg);
+    width: 50px;
+    z-index: 1;
+  
+}
+
+.icon-container:hover::after {
+  left: 120px;  
+  top: 120px; 
+  transition: all 1100ms ease-in-out;
+}
+
+.icon-container:hover {
+  box-shadow: none;
+  transition: all 1100ms ease-in-out;
+}
+
 
 .nav-branding svg {
     width: 42px;
