@@ -482,7 +482,7 @@ footer {
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 140px min-content;
         width: max(50%, 850px);
-        border-radius: var(--border-radius-slanted);
+        border-radius: 50% 20% / 10% 30%;
         padding: 100px 25px;
         grid-template-areas:
             "photo intro"
