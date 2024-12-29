@@ -282,6 +282,7 @@ body {
     color: white;
     font-size: var(--heading-large);
     margin-bottom: 1rem;
+    width: 400px;
 }
 
 .detailed-about-description {

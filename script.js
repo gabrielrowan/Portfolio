@@ -82,8 +82,8 @@ function changeWord()
     }
 }
 
-// Change the word every 4 seconds
-setInterval(changeWord, 4000);
+// Change the word every 3 seconds
+setInterval(changeWord, 3000);
 
 
 // Initialize with the first word
