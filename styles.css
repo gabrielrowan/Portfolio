@@ -145,7 +145,7 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(to bottom right, rgba(107, 139, 245, 1) 0%, rgba(0, 49, 81, 1) 32%, rgba(0, 25, 41, 1) 91%);
+    background: linear-gradient(to bottom right, rgba(107, 139, 245, 1) 0%, rgba(0, 49, 81, 1) 70%, rgba(0, 25, 41, 1) 91%);
     border-radius: var(--border-radius-small);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
     position: relative;
@@ -175,7 +175,6 @@ body {
     gap: 3px;
     position: relative;
     overflow: hidden;
-    transition: box-shadow 150ms ease-in;
 }
 
 .icon-container svg {
@@ -202,12 +201,6 @@ body {
 .icon-container.active::after {
     left: 120px;
     top: 120px;
-    transition: all 950ms ease-in-out;
-}
-
-.icon-container:hover,
-.icon-container.active {
-    box-shadow: none;
     transition: all 950ms ease-in-out;
 }
 
