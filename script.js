@@ -56,7 +56,7 @@ function applyAnimationToIconContainers()
     });
 }
 
-const words = [`Console.Write("Hello")`, `Console.Log("Hello")`, `print("Hello")`, `std::cout << "Hello"`];
+const words = [`Console.Write("Hello")`, `Console.Log("Hello")`, `print("Hello")`, `std::cout << "Hello"`, `echo "Hello"`];
 let index = 0;
 let animate = true;
 

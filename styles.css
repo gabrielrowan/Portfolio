@@ -275,14 +275,17 @@ body {
     min-height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 1.5rem;
+    padding: 1rem 2rem 1.5rem 1.5rem;
 }
 
 .detailed-about-title {
-    color: white;
+    background: -webkit-linear-gradient(45deg, #7F8AED 45%, #DA85C9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: var(--heading-large);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     width: 400px;
+    color: white;
 }
 
 .detailed-about-description {
@@ -291,7 +294,16 @@ body {
 
 .detailed-about-text {
     color: white;
-    font-size: var(--text-size-standard)
+    font-size: var(--text-size-standard);
+    margin-bottom: 1rem;
+}
+
+.detailed-about-text .blog-link {
+    text-decoration-line: underline;
+    text-decoration-color: var(--purple);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 2px;
+    color: var(--purple);
 }
 
 svg #sw-js-blob-svg {
