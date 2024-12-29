@@ -131,7 +131,8 @@ body {
 
 
 
-.about-section {
+.about-section,
+.detailed-about-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -264,6 +265,99 @@ body {
     width: min(80%, 250px);
     border: 1px solid var(--background-primary);
     border-radius: var(--border-radius-small);
+}
+
+.detailed-about-card {
+    background: linear-gradient(135deg, rgba(0, 25, 41, 1) 0%, rgba(0, 49, 81, 1) 40%);
+    position: relative;
+    z-index: 0;
+    border-radius: 10% 30% /50% 20%;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5rem;
+}
+
+.detailed-about-title {
+    color: white;
+    font-size: var(--heading-large);
+    margin-bottom: 1rem;
+}
+
+.detailed-about-description {
+    align-self: center;
+}
+
+.detailed-about-text {
+    color: white;
+    font-size: var(--text-size-standard)
+}
+
+svg #sw-js-blob-svg {
+    width: 300px;
+    height: 400px;
+    z-index: 1;
+}
+
+.language-animation {
+    position: relative;
+    width: 400px;
+    height: 450px;
+}
+
+
+.speech-bubble {
+    background: white;
+    color: black;
+    padding: 10px 25px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 1rem;
+
+}
+
+.speech-bubble-one {
+    top: 25%;
+    left: 65px;
+
+}
+
+.speech-bubble-two {
+    top: 47%;
+    right: 13px;
+    width: 220px;
+    height: 42px;
+
+
+}
+
+.changing-word {
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+
+
+.speech-bubble-three {
+    bottom: 22%;
+    left: 75px;
+
+}
+
+svg.pause,
+svg.play {
+    width: 50px;
+    height: 50px;
+
+}
+
+.pause-play-button {
+    bottom: 22%;
+    right: 15px;
+    position: absolute;
 }
 
 .projects-section {
@@ -441,7 +535,8 @@ footer {
 
     .about-card,
     .project-card,
-    .contact-card {
+    .contact-card,
+    .detailed-about-card {
         width: min(75%, 800px);
     }
 }
@@ -494,6 +589,10 @@ footer {
 
     .about-profile-photo img {
         width: min(100%, 400px);
+    }
+
+    .detailed-about-card {
+        width: 1050px;
     }
 
     .projects-section {
