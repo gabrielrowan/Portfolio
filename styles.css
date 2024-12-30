@@ -270,12 +270,14 @@ body {
 .detailed-about-card {
     background: linear-gradient(135deg, rgba(0, 25, 41, 1) 0%, rgba(0, 49, 81, 1) 40%);
     position: relative;
-    z-index: 0;
+    z-index: 2;
     border-radius: 10% 30% /50% 20%;
     min-height: 500px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     padding: 1rem 2rem 1.5rem 1.5rem;
+    width: min(95%, 800px);
+
 }
 
 .detailed-about-title {
@@ -515,6 +517,14 @@ footer {
     position: relative;
 }
 
+/*mobile view detailed about card*/
+@media(max-width: 900px) {
+    .detailed-about-card {
+        border-radius: var(--border-radius-small);
+
+    }
+}
+
 
 /*mobile view nav menu*/
 @media(max-width: 800px) {
@@ -605,7 +615,7 @@ footer {
     }
 
     .detailed-about-card {
-        width: 1050px;
+        width: max(1050px, 60%);
     }
 
     .projects-section {
