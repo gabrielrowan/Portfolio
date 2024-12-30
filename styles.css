@@ -305,15 +305,12 @@ body {
 
 
 svg #sw-js-blob-svg {
-    width: 300px;
-    height: 310px;
     z-index: 1;
 }
 
 .language-animation {
     position: relative;
-    width: 400px;
-    height: 450px;
+    width: clamp(320px, 25vw, 450px);
 }
 
 
@@ -366,8 +363,8 @@ svg.play {
 }
 
 .pause-play-button {
-    bottom: 22%;
-    right: 15px;
+    bottom: 4%;
+    right: 0;
     position: absolute;
 }
 
@@ -616,6 +613,11 @@ footer {
 
     .detailed-about-title {
         font-size: var(--heading-large);
+    }
+
+    .pause-play-button {
+        right: 0px;
+        bottom: 15%;
     }
 
     .projects-section {
