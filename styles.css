@@ -438,11 +438,18 @@ svg.play {
     border-radius: 7px;
     font-size: var(--text-size-standard);
     box-shadow: var(--box-shadow);
+    transition: all 0.6secs ease-out;
 }
 
 .live-demo-link,
 .view-code-link {
     text-decoration: none;
+    color: black;
+}
+
+.project-button-row button:hover {
+    transform: translateY(-5px);
+    background: white;
     color: black;
 }
 
