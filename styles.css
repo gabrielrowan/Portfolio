@@ -440,6 +440,12 @@ svg.play {
     box-shadow: var(--box-shadow);
 }
 
+.live-demo-link,
+.view-code-link {
+    text-decoration: none;
+    color: black;
+}
+
 .contact-section {
     display: flex;
     align-items: center;
