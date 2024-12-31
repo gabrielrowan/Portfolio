@@ -537,12 +537,12 @@ footer {
 /*mobile view nav menu*/
 @media(max-width: 800px) {
     .nav-menu.active {
-        position: fixed;
+        position: absolute;
         inset: 0 0 0 70vw;
         background-color: var(--purple);
         padding: min(14vh, 7rem) 2rem;
         display: block;
-        height: 18vh;
+        height: 30px;
 
 
     }
