@@ -438,7 +438,7 @@ svg.play {
     border-radius: 7px;
     font-size: var(--text-size-standard);
     box-shadow: var(--box-shadow);
-    transition: all 0.6secs ease-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .live-demo-link,
@@ -448,7 +448,7 @@ svg.play {
 }
 
 .project-button-row button:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     background: white;
     color: black;
 }
