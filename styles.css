@@ -539,8 +539,8 @@ footer {
     .nav-menu.active {
         position: absolute;
         inset: 0 0 0 70vw;
-        background-color: var(--purple);
-        padding: min(14vh, 7rem) 2rem;
+        background-color: rgba(107, 139, 245, 0.7);
+        padding: min(13vh, 6.5rem) 1rem;
         display: block;
         height: 30px;
 
