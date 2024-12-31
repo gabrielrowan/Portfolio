@@ -270,7 +270,6 @@ body {
 .detailed-about-card {
     background: linear-gradient(135deg, rgba(0, 25, 41, 1) 0%, rgba(0, 49, 81, 1) 40%);
     position: relative;
-    z-index: 2;
     border-radius: 10% 30% /50% 20%;
     min-height: 500px;
     display: grid;
@@ -540,7 +539,7 @@ footer {
     .nav-menu.active {
         position: fixed;
         inset: 0 0 0 70vw;
-        background-color: rgb(238, 217, 196, 0.5);
+        background-color: var(--purple);
         padding: min(14vh, 7rem) 2rem;
         display: block;
         height: 18vh;
