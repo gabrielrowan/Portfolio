@@ -408,13 +408,13 @@ svg.play {
 
 .project-description {
     padding: 20px 10px;
-    height: clamp(13rem, 31vh, 17.5rem);
+    height: min(13rem);
 }
 
 .project-name {
     color: var(--white);
     font-weight: 600;
-    font-size: var(--heading-medium);
+    font-size: 1.5rem;
     margin: 10px 0 15px 0;
 }
 
@@ -532,6 +532,7 @@ footer {
         border-radius: var(--border-radius-small);
 
     }
+
 }
 
 
@@ -545,8 +546,8 @@ footer {
         display: block;
         height: 30px;
 
-
     }
+
 }
 
 /*mobile view nav menu with larger indent for small width phones like galaxy fold*/
@@ -649,7 +650,7 @@ footer {
     }
 
     .project-card {
-        width: 23%;
+        width: 25%;
     }
 
     .contact-section {
