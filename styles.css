@@ -408,7 +408,35 @@ svg.play {
 
 .project-description {
     padding: 20px 10px;
-    height: min(13rem);
+    height: min(17rem);
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+
+}
+
+.project-description .layer {
+    z-index: -5;
+    position: absolute;
+    top: calc(100% - 2px);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(45deg, #7F8AED 45%, #E0BCD8);
+    transition: 0.5s;
+}
+
+.project-description:hover .layer {
+    top: 0;
+}
+
+.project-description:hover .project-name,
+.project-description:hover .project-main-details {
+    color: black;
+}
+
+.project-description:hover .project-button-row button {
+    background-color: white;
 }
 
 .project-name {
@@ -416,6 +444,7 @@ svg.play {
     font-weight: 600;
     font-size: 1.5rem;
     margin: 10px 0 15px 0;
+    transition: 0.5s;
 }
 
 .project-main-details {
@@ -423,10 +452,12 @@ svg.play {
     font-size: var(--text-size-standard);
     line-height: 30px;
     font-weight: 400;
+    z-index: 5;
+    transition: 0.5s;
 }
 
 .project-button-row {
-    padding: 20px 10px;
+    padding: 20px 0;
     display: flex;
     gap: 3%;
 }
@@ -438,7 +469,7 @@ svg.play {
     border-radius: 7px;
     font-size: var(--text-size-standard);
     box-shadow: var(--box-shadow);
-    transition: all 0.3s ease-in-out;
+    transition: 0.5s;
 }
 
 .live-demo-link,
@@ -447,11 +478,6 @@ svg.play {
     color: black;
 }
 
-.project-button-row button:hover {
-    transform: translateY(-3px);
-    background: white;
-    color: black;
-}
 
 .contact-section {
     display: flex;
