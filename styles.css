@@ -408,6 +408,7 @@ svg.play {
 
 .project-description {
     padding: 20px 10px;
+    height: clamp(13rem, 31vh, 17.5rem);
 }
 
 .project-name {
