@@ -396,14 +396,21 @@ svg.play {
     border-radius: var(--border-radius-small);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
     box-shadow: var(--box-shadow);
+    transition: transform 150ms ease-in-out 100ms;
+}
+
+
+.project-card:not(:hover) {
+    transform: scale(0.965);
 }
 
 .project-image {
     width: 100%;
-    border-radius: var(--border-radius-small);
+    border-radius: 0.375rem 0.375rem 0 0;
     aspect-ratio: 3/ 2;
     object-fit: cover;
     object-position: top center;
+    display: block;
 }
 
 .project-description {
