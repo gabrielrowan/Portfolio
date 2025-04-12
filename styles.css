@@ -282,6 +282,7 @@ body {
 .detailed-about-title {
     background: -webkit-linear-gradient(45deg, #7F8AED 45%, #DA85C9);
     -webkit-background-clip: text;
+    margin-bottom: 2.5rem;
     -webkit-text-fill-color: transparent;
     font-size: var(--heading-medium);
     max-width: 360px;
