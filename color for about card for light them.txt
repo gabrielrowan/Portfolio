@@ -1,0 +1,1 @@
+color for about card for light theme:  linear-gradient(#dcdddc, hsl(0, 0%, 100%, 60%))*/

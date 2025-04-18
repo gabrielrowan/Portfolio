@@ -9,7 +9,7 @@
     --heading-large: 2.3rem;
     --heading-medium: 1.3rem;
     --text-size-small: 0.8rem;
-    --text-size-standard: 1rem;
+    --text-size-standard: 1.05rem;
     --text-size-large: 1.2rem;
     --white: #f8f8ff;
     --off-white: #FAF9F6;
@@ -34,7 +34,7 @@ html {
 
 
 body {
-    background-color: var(--background-secondary);
+    background-color: var(--white);
 }
 
 
@@ -43,19 +43,19 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(107, 139, 245, 0.7);
+    background: var(--white);
 
 }
 
 ::-webkit-scrollbar-thumb {
     margin-top: 10px;
-    background: white;
+    background: var(--purple);
     border-radius: 10px;
 }
 
 /* ---- nav bar ---- */
 .navbar {
-    background-color: var(--purple);
+    background-color: var(--white);
     min-height: 70px;
     display: flex;
     justify-content: flex-end;
@@ -146,7 +146,7 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(to bottom right, rgba(107, 139, 245, 1) 0%, rgba(0, 49, 81, 1) 70%, rgba(0, 25, 41, 1) 91%);
+    background: linear-gradient(#dcdddc, hsl(0, 0%, 100%, 60%));
     border-radius: var(--border-radius-small);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
     position: relative;
@@ -226,7 +226,6 @@ body {
 }
 
 .about-profile-name {
-    color: var(--white);
     font-weight: 600;
     font-size: var(--heading-large);
     margin-bottom: 0.4rem;
@@ -237,12 +236,11 @@ body {
     display: block;
     height: 1.5px;
     width: 3.5rem;
-    background: var(--purple);
     margin: 0 auto;
+    background-color: black;
 }
 
 .about-profile-job-title {
-    color: var(--off-white);
     font-weight: 400;
 }
 
@@ -268,7 +266,7 @@ body {
 }
 
 .detailed-about-card {
-    background: linear-gradient(135deg, rgba(0, 25, 41, 1) 0%, rgba(0, 49, 81, 1) 40%);
+    background: linear-gradient(45deg, #dcdddc, hsl(0, 0%, 100%, 60%));
     position: relative;
     border-radius: 10% 30% /50% 20%;
     min-height: 500px;
@@ -280,25 +278,15 @@ body {
 }
 
 .detailed-about-title {
-    background: -webkit-linear-gradient(45deg, #7F8AED 45%, #DA85C9);
-    -webkit-background-clip: text;
-    margin-bottom: 2.5rem;
-    -webkit-text-fill-color: transparent;
-    font-size: var(--heading-medium);
+
+    margin: 2.5rem 0;
+    font-size: var(--heading-large);
     max-width: 360px;
-    color: white;
+    color: black;
 }
 
-.detailed-about-title:nth-child(2) {
-    margin-bottom: 1.5rem;
-}
-
-.detailed-about-description {
-    align-self: center;
-}
 
 .detailed-about-text {
-    color: white;
     font-size: var(--text-size-standard);
     margin-bottom: 1rem;
 }
@@ -392,7 +380,7 @@ svg.play {
 }
 
 .project-card {
-    background-color: var(--background-primary);
+    background-color: var(--off-black);
     width: 95%;
     border-radius: var(--border-radius-small);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
@@ -505,10 +493,9 @@ i {
     flex-direction: column;
     text-align: center;
     padding: 2rem;
-    background-color: var(--background-primary);
+    background: linear-gradient(45deg, #dcdddc, hsl(0, 0%, 100%, 75%));
     border-radius: var(--border-radius-small);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
-    color: var(--white);
     position: relative;
 }
 
@@ -521,7 +508,7 @@ i {
     display: block;
     height: 1.5px;
     width: 3.5rem;
-    background: var(--purple);
+    background: black;
     margin: 0 auto;
 }
 
@@ -537,7 +524,6 @@ i {
 
 .contact-detail-type {
     margin: 10px 0 5px 0;
-    color: var(--off-white-transparent);
 }
 
 .contact-detail-data {
@@ -557,7 +543,7 @@ i {
 }
 
 footer {
-    background-color: var(--background-primary);
+    background-color: black;
     font-size: var(--text-size-small);
     padding: 1.5rem 0.5rem;
     color: var(--white);

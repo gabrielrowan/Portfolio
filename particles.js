@@ -1,6 +1,6 @@
 const options = {
     background: {
-        color: "#001929"
+        color: "#FFFFFF"
     },
     fullScreen: {
         enable: true, // Prevents particles from occupying the full screen
@@ -17,22 +17,22 @@ const options = {
             enable: false,
         },
         number: {
-            value: 100
+            value: 50
         },
         shape: {
             type: "circle"
         },
         links: {
             enable: true,
-            opacity: 0.2,
+            opacity: 0.4,
             color: "#6B8BF5"
         },
         opacity: {
-            value: 0.2
+            value: 0.3
         },
         size: {
             value: {
-                min: 1,
+                min: 2,
                 max: 3
             }
         }
