@@ -87,7 +87,7 @@ body {
 .nav-link {
     text-decoration: none;
     color: var(--off-black);
-    font-size: var(--text-size-large);
+    font-size: var(--text-size-standard);
 
 }
 
