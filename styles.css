@@ -266,7 +266,7 @@ body {
 }
 
 .detailed-about-card {
-    background: linear-gradient(45deg, #dcdddc, hsl(0, 0%, 100%, 60%));
+    background: linear-gradient(45deg, #dcdddc, hsl(0, 0%, 100%, 85%));
     position: relative;
     border-radius: 10% 30% /50% 20%;
     min-height: 500px;
